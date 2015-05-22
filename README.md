@@ -11,5 +11,5 @@ Include:
 
 Slide bar is square.
 
-![pic01](README_RES/Screenshot01.png)
+![pic01](README_RES/screen_shot_01.png)
 
