@@ -21,6 +21,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    self.view.backgroundColor = UIColorFromRGB(0xfdff61);
+    
     NSMutableArray *titlesArr = [[[NSMutableArray alloc]init]autorelease];
     for (int i=100; i<=2000; i+=100) {
         NSString *t = [NSString stringWithFormat:@"%d", i];
