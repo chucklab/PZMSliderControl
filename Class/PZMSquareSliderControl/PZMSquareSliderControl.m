@@ -9,7 +9,7 @@
 #import "PZMSquareSliderControl.h"
 #import "GlobalDef.h"
 #import "Masonry.h"
-#import "MMPlaceHolder.h"
+//#import "MMPlaceHolder.h"
 
 @implementation PZMSquareSliderControl{
     
