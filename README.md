@@ -13,3 +13,12 @@ Slide bar is square.
 
 ![pic01](README_RES/screen_shot_01.png)
 
+## Requirements
+* Xcode 6
+* iOS 6.0
+
+## Author
+Ma Chao, mc@pizima.com
+
+## License
+PZMSliderControl is available under the MIT license. See the LICENSE file for more info.
