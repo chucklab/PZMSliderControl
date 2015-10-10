@@ -40,6 +40,14 @@
     ssc.currIndexDidChangedBlock = ^(NSString *currTitle){
         NSLog(@"Current Index Did Changed To Title:%@", currTitle);
     };
+    ssc.currIndexCanChangedBlock = ^(int targetIndex){
+        
+        if (targetIndex > 3) {
+            return NO;
+        }
+        
+        return YES;
+    };
 }
 
 - (void)didReceiveMemoryWarning {

@@ -168,7 +168,19 @@
         
         [self setSegIndex:0];
     }else{
-        [self setSegIndex:(((int)x + (int)(_segSize*.5f)) / (int)_segSize)];
+        
+        int currIndex = [self currIndex];
+        int targetIndex = (((int)x + (int)(_segSize*.5f)) / (int)_segSize);
+        
+        if (currIndex != targetIndex) {
+            if (self.currIndexCanChangedBlock &&
+                !self.currIndexCanChangedBlock(targetIndex)) {
+                
+                [self setSegIndex:[self currIndex]];
+            }else{
+                [self setSegIndex:targetIndex];
+            }
+        }
     }
     
     [self updateSegTitle];

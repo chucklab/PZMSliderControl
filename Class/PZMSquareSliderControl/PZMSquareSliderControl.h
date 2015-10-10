@@ -10,11 +10,13 @@
 
 typedef void (^CurrIndexChangedBlock)(NSString *currTitle);
 typedef void (^CurrIndexDidChangedBlock)(NSString *currTitle);
+typedef BOOL (^CurrIndexCanChangedBlock)(int targetIndex);
 
 @interface PZMSquareSliderControl : UIControl
 
 @property (nonatomic, copy) CurrIndexChangedBlock currIndexChangedBlock;
 @property (nonatomic, copy) CurrIndexDidChangedBlock currIndexDidChangedBlock;
+@property (nonatomic, copy) CurrIndexCanChangedBlock currIndexCanChangedBlock;
 
 #pragma mark - Main Init Msgs.
 - (id)initWithFrame:(CGRect)frame titlesArr:(NSArray *)titlesArr;
