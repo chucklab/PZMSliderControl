@@ -168,7 +168,7 @@
         
         [self setSegIndex:0];
     }else{
-        [self setSegIndex:((int)x / (int)_segSize)];
+        [self setSegIndex:(((int)x + (int)(_segSize*.5f)) / (int)_segSize)];
     }
     
     [self updateSegTitle];
